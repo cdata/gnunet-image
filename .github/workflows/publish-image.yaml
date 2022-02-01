@@ -3,9 +3,7 @@ name: Publish Gnunet Docker Image
 on:
   workflow_dispatch:
   push:
-    paths:
-      - 'siren/**'
-      - '.github/workflows/push-siren.yml'
+    branch: main
 
 jobs:
   publish-image:
